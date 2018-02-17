@@ -73,7 +73,7 @@ Crouton requires enabling developer mode on your ChromeOS device which breaks th
         ```
         echo "nameserver 8.8.8.8" > /etc/resolv.conf
         ```
-        Then attempt to run the `alpine-setup` command again.
+        Then attempt to run the `setup-alpine` command again.
 10. Once the `alpine-setup` script is complete--it will instruct you to restart the machine.
     * To exit the VM Press **Ctrl + A, X**.
     * **Congrats! You've installed Alpine Linux!**
@@ -86,7 +86,7 @@ Crouton requires enabling developer mode on your ChromeOS device which breaks th
        2. Run:
           ```
           apk --no-cache update
-          apk --no-cache install vim
+          apk --no-cache add vim
           ```
           **Or install your favorite editor of choice**
        3. Use vim (or whiehver editor) to modify `/etc/apk/repositories` by uncommenting the line ending with `community`. To uncomment simply delete the leading `#` symbol on the line.
